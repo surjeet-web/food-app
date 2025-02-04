@@ -1,0 +1,304 @@
+
+
+.app{
+  width: 100%;
+  max-width: 1200px; /* Adjust based on your design */
+  margin: 0 auto; /* Centers the header */
+  padding: 0 1rem; /* Adds spacing on smaller screens */
+  box-sizing: border-box;
+
+}
+
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #282c34;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 50px;
+  width: 50px;
+  
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #61dafb;
+}
+
+.cta-button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #21a1f1;
+  color: white;
+}
+
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Restaurant Card Styling */
+.restaurant-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 100%;
+  max-width: 300px;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image */
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Card Content */
+.card-content {
+  padding: 15px;
+}
+
+.card-title h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.restaurant-name h3 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* Rating */
+.rating {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff9800;
+}
+
+
+.main {
+ display: flex;
+flex-direction: column;
+width: 100%;
+max-width:1280px;
+}
+
+.search{
+height: 100px;
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+background-color: #ff9800;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+/* Search Input Styling */
+.search input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* When user clicks inside the input */
+.search input:focus {
+  border-color: #ff4500;
+  box-shadow: 0px 0px 8px rgba(255, 69, 0, 0.5);
+}
+
+/* Placeholder Text Styling */
+.search input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Input Hover Effect */
+.search input:hover {
+  border-color: #ff9800;
+}
+
+.restaurantcard {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 20px;
+  
+}
+
+.filtre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  text-transform: capitalize;
+  margin: 20px;
+
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+align-items: center;
+justify-content: center;
+}
+
+.dropbtn{
+  background-color:#ff4500 ;
+  padding: 10px;
+ 
+  border-radius: 7px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+cursor: pointer;
+border: ;
+}
+
+.dropdown-content{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  overflow:hidden ;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1)
+  ;
+  
+
+}
+
+
+/* .dropdown-content:hover{
+max-width: auto;
+
+} */
+
+.dropdown-content button{
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+transition: ease-in -out 0.3s;
+  border-radius: 10px;
+  background-color: #ff4500;
+ 
+
+}
+
+.dropdown-content button:hover{
+background-color: #c23400;
+}
+
+
+/* Footer.css */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.footer-section h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  color: #a0a0a0;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
